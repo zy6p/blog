@@ -1,7 +1,12 @@
 ---
 title: 开源 GIS
 date: 2021-04-26 11:13:03
-tags: opengis gis qgis
+categories:
+ - gis
+tags: 
+ - opengis
+ - gis 
+ - qgis
 ---
 # OpenGIS
 

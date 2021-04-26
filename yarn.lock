@@ -596,6 +596,11 @@ hexo-theme-landscape@^0.0.3:
   resolved "https://registry.npm.taobao.org/hexo-theme-landscape/download/hexo-theme-landscape-0.0.3.tgz#87d1f4d613da9be5245dad0d4b80479eab70d386"
   integrity sha1-h9H01hPam+UkXa0NS4BHnqtw04Y=
 
+hexo-theme-next@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.npm.taobao.org/hexo-theme-next/download/hexo-theme-next-8.3.0.tgz#4078d4bbde9f300234f4bd6e2dcd30c4913a1a54"
+  integrity sha1-QHjUu96fMAI09L1uLc0wxJE6GlQ=
+
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
