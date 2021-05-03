@@ -23,3 +23,28 @@ ZOO-Project 在数据输入和输出方面非常灵活，因此您可以处理�
 1. 模块化。分为4个模块，分别是 ZOO-Kernel，ZOO-Services，ZOO-API，ZOO-Client。
 2. 扩展性。开发人员可以使用任意熟悉的语言开发相关算法，无需像 GeoServer 只能使用 JAVA。
 
+## 安装
+
+### docker 安装
+
+首先使用 ubuntu:18.04 镜像
+
+```shell
+docker pull ubuntu:18.04
+docker run -itd --name zoo-p1 ubuntu:18.04
+```
+
+换源并安装基础软件
+
+```shell
+docker exec -it zoo-p1 sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+docker exec -it zoo-p1 apt install flex bison libfcgi-dev libxml2 libxml2-dev \ 
+  curl openssl autoconf apache2 software-properties-common subversion \
+  python-dev build-essential libxslt1-dev
+docker exec -it zoo-p1 echo \
+  "deb https://launchpad.proxy.ustclug.org/ubuntugis/ppa/ubuntu bionic main" >> /etc/apt/sources.list
+docker exec -it zoo-p1 apt update
+docker exec -it zoo-p1 apt install libgdal-dev
+```
+
+检出源码并安装
