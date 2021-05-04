@@ -27,24 +27,12 @@ ZOO-Project 在数据输入和输出方面非常灵活，因此您可以处理�
 
 ### docker 安装
 
-首先使用 ubuntu:18.04 镜像
+使用作者发布在阿里云上的 docker 镜像部署.
 
 ```shell
-docker pull ubuntu:18.04
-docker run -itd --name zoo-p1 ubuntu:18.04
+git clone git@github.com:zy6p/zoo-project.git
+docker-compose up -d
 ```
 
-换源并安装基础软件
+接下来可以访问 [http://localhost:8166/](http://localhost:8166/)
 
-```shell
-docker exec -it zoo-p1 sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-docker exec -it zoo-p1 apt install flex bison libfcgi-dev libxml2 libxml2-dev \ 
-  curl openssl autoconf apache2 software-properties-common subversion \
-  python-dev build-essential libxslt1-dev
-docker exec -it zoo-p1 echo \
-  "deb https://launchpad.proxy.ustclug.org/ubuntugis/ppa/ubuntu bionic main" >> /etc/apt/sources.list
-docker exec -it zoo-p1 apt update
-docker exec -it zoo-p1 apt install libgdal-dev
-```
-
-检出源码并安装
