@@ -37,7 +37,7 @@ jobs:
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "goooog@88.com"
+          git config --global user.email "bot@hotdry.top"
           git config --global user.name "Deploy Bot"
           
       # Runs a set of commands using the runners shell
