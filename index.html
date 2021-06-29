@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="http://googlefonts.cn" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="http://googlefonts.cn/css?family=Lato:300,300italic,400,400italic,700,700italic%7CFira+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zy6p.github.io","root":"/blog/","images":"/blog/images","scheme":"Gemini","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="zy6p blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="zy6p blog">
+<meta property="og:url" content="https://zy6p.github.io/blog/">
+<meta property="og:site_name" content="zy6p blog">
+<meta property="og:description" content="zy6p blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="knowmore">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zy6p.github.io/blog/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>zy6p blog</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">zy6p blog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">zy6p blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">knowmore</p>
+  <div class="site-description" itemprop="description">zy6p blog</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/blog/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zy6p" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zy6p" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:goooog@88.com" title="E-Mail → mailto:goooog@88.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/zy6p" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zy6p.github.io/blog/2021/05/14/QGIS-%E7%A9%BA%E9%97%B4%E7%B4%A2%E5%BC%95%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="knowmore">
+      <meta itemprop="description" content="zy6p blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zy6p blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2021/05/14/QGIS-%E7%A9%BA%E9%97%B4%E7%B4%A2%E5%BC%95%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">QGIS 空间索引编码实现</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-14 12:25:58" itemprop="dateCreated datePublished" datetime="2021-05-14T12:25:58+08:00">2021-05-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 12:37:01" itemprop="dateModified" datetime="2021-06-29T12:37:01+08:00">2021-06-29</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="QGIS-空间索引编码实现"><a href="#QGIS-空间索引编码实现" class="headerlink" title="QGIS 空间索引编码实现"></a>QGIS 空间索引编码实现</h1><p>QGIS 空间索引使用 R 树索引，主要底层实现由库 <a target="_blank" rel="noopener" href="https://github.com/libspatialindex/libspatialindex">libspatialindex</a> 提供。</p>
+<h2 id="构建空间索引"><a href="#构建空间索引" class="headerlink" title="构建空间索引"></a>构建空间索引</h2><p>QGIS 原生算法包含“创建空间索引”算法，其参数仅包含一项 – 输入图层。该算法由 C++ 实现，编码如下：  </p>
+<h3 id="调用-QgsVectorDataProvider-的-createSpatialIndex-函数"><a href="#调用-QgsVectorDataProvider-的-createSpatialIndex-函数" class="headerlink" title="调用 QgsVectorDataProvider 的 createSpatialIndex() 函数"></a>调用 QgsVectorDataProvider 的 createSpatialIndex() 函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">QVariantMap <span class="title">QgsSpatialIndexAlgorithm::processAlgorithm</span><span class="params">( <span class="keyword">const</span> QVariantMap &amp;parameters, QgsProcessingContext &amp;context, QgsProcessingFeedback *feedback )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  QgsVectorLayer *layer = <span class="built_in">parameterAsVectorLayer</span>( parameters, <span class="built_in">QStringLiteral</span>( <span class="string">&quot;INPUT&quot;</span> ), context );</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> ( !layer )</span><br><span class="line">    <span class="keyword">throw</span> <span class="built_in">QgsProcessingException</span>( QObject::<span class="built_in">tr</span>( <span class="string">&quot;Could not load source layer for %1.&quot;</span> ).<span class="built_in">arg</span>( <span class="built_in">QLatin1String</span>( <span class="string">&quot;INPUT&quot;</span> ) ) );</span><br><span class="line"></span><br><span class="line">  QgsVectorDataProvider *provider = layer-&gt;<span class="built_in">dataProvider</span>();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> ( provider-&gt;<span class="built_in">capabilities</span>() &amp; QgsVectorDataProvider::CreateSpatialIndex )</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> ( !provider-&gt;<span class="built_in">createSpatialIndex</span>() )</span><br><span class="line">    &#123;</span><br><span class="line">      feedback-&gt;<span class="built_in">pushInfo</span>( QObject::<span class="built_in">tr</span>( <span class="string">&quot;Could not create spatial index&quot;</span> ) );</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">    feedback-&gt;<span class="built_in">pushInfo</span>( QObject::<span class="built_in">tr</span>( <span class="string">&quot;Layer&#x27;s data provider does not support spatial indexes&quot;</span> ) );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  QVariantMap outputs;</span><br><span class="line">  outputs.<span class="built_in">insert</span>( <span class="built_in">QStringLiteral</span>( <span class="string">&quot;OUTPUT&quot;</span> ), layer-&gt;<span class="built_in">id</span>() );</span><br><span class="line">  <span class="keyword">return</span> outputs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="QgsVectorDataProvider-的-createSpatialIndex-为虚函数，由其派生类实现"><a href="#QgsVectorDataProvider-的-createSpatialIndex-为虚函数，由其派生类实现" class="headerlink" title="QgsVectorDataProvider 的 createSpatialIndex() 为虚函数，由其派生类实现"></a>QgsVectorDataProvider 的 createSpatialIndex() 为虚函数，由其派生类实现</h3><h4 id="bool-QgsOgrProvider-createSpatialIndex"><a href="#bool-QgsOgrProvider-createSpatialIndex" class="headerlink" title="bool QgsOgrProvider::createSpatialIndex()"></a>bool QgsOgrProvider::createSpatialIndex()</h4><ul>
+<li>QgsOgrProvider 仅支持 shp gpkg sqlite 构建空间索引，对其他数据格式不支持。</li>
+<li>是线程不安全的，查询和更新必须从互斥中运行。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">QgsOgrProvider::createSpatialIndex</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="function">QgsCPLHTTPFetchOverrider <span class="title">oCPLHTTPFetcher</span><span class="params">( mAuthCfg )</span></span>;</span><br><span class="line">  <span class="built_in">QgsSetCPLHTTPFetchOverriderInitiatorClass</span>( oCPLHTTPFetcher, <span class="built_in">QStringLiteral</span>( <span class="string">&quot;QgsOgrProvider&quot;</span> ) );</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> ( !mOgrOrigLayer )</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">if</span> ( !<span class="built_in">doInitialActionsForEdition</span>() )</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  QByteArray layerName = mOgrOrigLayer-&gt;<span class="built_in">name</span>();</span><br><span class="line">  <span class="keyword">if</span> ( mGDALDriverName == <span class="built_in">QLatin1String</span>( <span class="string">&quot;ESRI Shapefile&quot;</span> ) )</span><br><span class="line">  &#123;</span><br><span class="line">    QByteArray sql = <span class="built_in">QByteArray</span>( <span class="string">&quot;CREATE SPATIAL INDEX ON &quot;</span> ) + <span class="built_in">quotedIdentifier</span>( layerName );  <span class="comment">// quote the layer name so spaces are handled</span></span><br><span class="line">    <span class="built_in">QgsDebugMsgLevel</span>( <span class="built_in">QStringLiteral</span>( <span class="string">&quot;SQL: %1&quot;</span> ).<span class="built_in">arg</span>( QString::<span class="built_in">fromUtf8</span>( sql ) ), <span class="number">2</span> );</span><br><span class="line">    mOgrOrigLayer-&gt;<span class="built_in">ExecuteSQLNoReturn</span>( sql );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ( !mFilePath.<span class="built_in">endsWith</span>( <span class="built_in">QLatin1String</span>( <span class="string">&quot;.shp&quot;</span> ), Qt::CaseInsensitive ) )</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function">QFileInfo <span class="title">fi</span><span class="params">( mFilePath )</span></span>;     <span class="comment">// to get the base name</span></span><br><span class="line">    <span class="comment">//find out, if the .qix file is there</span></span><br><span class="line">    <span class="keyword">return</span> QFileInfo::<span class="built_in">exists</span>( fi.<span class="built_in">path</span>().<span class="built_in">append</span>( <span class="string">&#x27;/&#x27;</span> ).<span class="built_in">append</span>( fi.<span class="built_in">completeBaseName</span>() ).<span class="built_in">append</span>( <span class="string">&quot;.qix&quot;</span> ) );</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> ( mGDALDriverName == <span class="built_in">QLatin1String</span>( <span class="string">&quot;GPKG&quot;</span> ) ||</span><br><span class="line">            mGDALDriverName == <span class="built_in">QLatin1String</span>( <span class="string">&quot;SQLite&quot;</span> ) )</span><br><span class="line">  &#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> QT_VERSION &lt; QT_VERSION_CHECK(5, 14, 0)</span></span><br><span class="line">    QMutex *mutex = <span class="literal">nullptr</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">    QRecursiveMutex *mutex = <span class="literal">nullptr</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">    OGRLayerH layer = mOgrOrigLayer-&gt;<span class="built_in">getHandleAndMutex</span>( mutex );</span><br><span class="line">    QByteArray sql = <span class="built_in">QByteArray</span>( <span class="string">&quot;SELECT CreateSpatialIndex(&quot;</span> + <span class="built_in">quotedIdentifier</span>( layerName ) + <span class="string">&quot;,&quot;</span></span><br><span class="line">                                 + <span class="built_in">quotedIdentifier</span>( <span class="built_in">OGR_L_GetGeometryColumn</span>( layer ) ) + <span class="string">&quot;) &quot;</span> ); <span class="comment">// quote the layer name so spaces are handled</span></span><br><span class="line">    mOgrOrigLayer-&gt;<span class="built_in">ExecuteSQLNoReturn</span>( sql );</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="bool-QgsMemoryProvider-createSpatialIndex"><a href="#bool-QgsMemoryProvider-createSpatialIndex" class="headerlink" title="bool QgsMemoryProvider::createSpatialIndex()"></a>bool QgsMemoryProvider::createSpatialIndex()</h4><ul>
+<li>基于内存的图层</li>
+<li>此处调用库 libspatialindex 实现</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">QgsMemoryProvider::createSpatialIndex</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> ( !mSpatialIndex )</span><br><span class="line">  &#123;</span><br><span class="line">    mSpatialIndex = <span class="keyword">new</span> <span class="built_in">QgsSpatialIndex</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// add existing features to index</span></span><br><span class="line">    <span class="keyword">for</span> ( QgsFeatureMap::iterator it = mFeatures.<span class="built_in">begin</span>(); it != mFeatures.<span class="built_in">end</span>(); ++it )</span><br><span class="line">    &#123;</span><br><span class="line">      mSpatialIndex-&gt;<span class="built_in">addFeature</span>( *it );</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QgsSpatialIndexData::initTree</span><span class="params">( IDataStream *inputStream = <span class="literal">nullptr</span> )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="comment">// for now only memory manager</span></span><br><span class="line">  mStorage = StorageManager::<span class="built_in">createNewMemoryStorageManager</span>();</span><br><span class="line"></span><br><span class="line">  <span class="comment">// R-Tree parameters</span></span><br><span class="line">  <span class="keyword">double</span> fillFactor = <span class="number">0.7</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">long</span> indexCapacity = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">long</span> leafCapacity = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">long</span> dimension = <span class="number">2</span>;</span><br><span class="line">  RTree::RTreeVariant variant = RTree::RV_RSTAR;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// create R-tree</span></span><br><span class="line">  SpatialIndex::id_type indexId;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> ( inputStream &amp;&amp; inputStream-&gt;<span class="built_in">hasNext</span>() )</span><br><span class="line">    mRTree = RTree::<span class="built_in">createAndBulkLoadNewRTree</span>( RTree::BLM_STR, *inputStream, *mStorage, fillFactor, indexCapacity,</span><br><span class="line">             leafCapacity, dimension, variant, indexId );</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    mRTree = RTree::<span class="built_in">createNewRTree</span>( *mStorage, fillFactor, indexCapacity,</span><br><span class="line">                                    leafCapacity, dimension, variant, indexId );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zy6p.github.io/blog/2021/05/04/OSGeo-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="knowmore">
+      <meta itemprop="description" content="zy6p blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zy6p blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2021/05/04/OSGeo-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/" class="post-title-link" itemprop="url">OSGeo 国内镜像源</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-04 21:57:45" itemprop="dateCreated datePublished" datetime="2021-05-04T21:57:45+08:00">2021-05-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 12:37:01" itemprop="dateModified" datetime="2021-06-29T12:37:01+08:00">2021-06-29</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="OSGeo-国内镜像源"><a href="#OSGeo-国内镜像源" class="headerlink" title="OSGeo 国内镜像源"></a>OSGeo 国内镜像源</h1><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>OSGeo4w 镜像：<a target="_blank" rel="noopener" href="http://gwmodel.whu.edu.cn/mirrors/osgeo4w/">武汉大学地理加权建模实验室</a>，镜像手动同步，有时会造成软件出现 Bug。</p>
+<h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><p>ubuntugis 反向代理：<a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/">科大镜像</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sed -i &#x27;s/ppa.launchpad.net/mirrors.ustc.edu.cn/g&#x27; /etc/apt/sources.list/*</span><br></pre></td></tr></table></figure>
+
+<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><h3 id="PostGIS"><a href="#PostGIS" class="headerlink" title="PostGIS"></a>PostGIS</h3><p>GitHub 仓库: <a target="_blank" rel="noopener" href="https://github.com/zy6p/docker-postgis">zy6p/docker-postgis</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull registry.cn-hangzhou.aliyuncs.com/opengis/postgis</span><br></pre></td></tr></table></figure>
+
+<h3 id="Zoo"><a href="#Zoo" class="headerlink" title="Zoo"></a>Zoo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:zy6p/zoo-project.git</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zy6p.github.io/blog/2021/05/01/ZOO-Project-WPS-%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="knowmore">
+      <meta itemprop="description" content="zy6p blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zy6p blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2021/05/01/ZOO-Project-WPS-%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">ZOO-Project WPS 服务框架基础</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-01 23:18:11" itemprop="dateCreated datePublished" datetime="2021-05-01T23:18:11+08:00">2021-05-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 12:37:01" itemprop="dateModified" datetime="2021-06-29T12:37:01+08:00">2021-06-29</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="ZOO-Project"><a href="#ZOO-Project" class="headerlink" title="ZOO-Project"></a>ZOO-Project</h1><p>ZOO-Project 是一个 WPS（Web Processing Service）框架，实现了 OGC 的 WPS 1.0.0 和 WPS 2.0.0 标准。  </p>
+<p>ZOO-Project 是一个用C、Python 和 JavaScript 编写的WPS（网络处理服务）实现。它是一个开源的平台，实现了由开放地理空间协会（OGC）编辑的WPS 1.0.0和WPS 2.0.0标准。  </p>
+<p>ZOO-Project 为创建和连锁符合WPS的网络服务提供了一个开发者友好的框架。它的主要目标是提供通用的和符合标准的方法来使用现有的开源库和算法作为WPS。它还为创建新的创新网络服务和应用提供了有效的工具。  </p>
+<p>ZOO-Project 能够在线处理地理空间或非地理空间数据。它的核心处理引擎（又称ZOO-Kernel）让你在可靠的软件和库的基础上执行一些现有的ZOO-服务。它还使您能够从新的或现有的源代码中创建自己的WPS服务，这些代码可以用七种不同的编程语言编写。这让您可以简单地将代码编成或变成WPS服务，具有直接的配置和标准编码方法。  </p>
+<p>ZOO-Project 在数据输入和输出方面非常灵活，因此您可以处理几乎任何一种存储在本地或从远程服务器和数据库访问的数据。ZOO-Project在数据处理和整合新的或现有的空间数据基础设施方面表现出色，因为它能够与地图服务器通信，并能整合网络绘图客户端。  </p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>模块化。分为4个模块，分别是 ZOO-Kernel，ZOO-Services，ZOO-API，ZOO-Client。</li>
+<li>扩展性。开发人员可以使用任意熟悉的语言开发相关算法，无需像 GeoServer 只能使用 JAVA。</li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="docker-安装"><a href="#docker-安装" class="headerlink" title="docker 安装"></a>docker 安装</h3><p>使用作者发布在阿里云上的 docker 镜像部署.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:zy6p/zoo-project.git</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<p>接下来可以访问 <a target="_blank" rel="noopener" href="http://localhost:8166/">http://localhost:8166/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zy6p.github.io/blog/2021/04/28/GIS-%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="knowmore">
+      <meta itemprop="description" content="zy6p blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zy6p blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2021/04/28/GIS-%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/" class="post-title-link" itemprop="url">GIS 开发指南</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-28 11:05:35" itemprop="dateCreated datePublished" datetime="2021-04-28T11:05:35+08:00">2021-04-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 12:37:01" itemprop="dateModified" datetime="2021-06-29T12:37:01+08:00">2021-06-29</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="GIS-开发指南"><a href="#GIS-开发指南" class="headerlink" title="GIS 开发指南"></a>GIS 开发指南</h1><p>笔者能力有限，仅谈谈自己理解的 GIS 开发。</p>
+<h2 id="开发经历"><a href="#开发经历" class="headerlink" title="开发经历"></a>开发经历</h2><p>先后进行过地理数据处理（Python 开发），客户端软件（C++）、WebGIS（前端）开发，均在 GitHub 开源。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zy6p.github.io/blog/2021/04/26/%E5%BC%80%E6%BA%90-GIS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="knowmore">
+      <meta itemprop="description" content="zy6p blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zy6p blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/blog/2021/04/26/%E5%BC%80%E6%BA%90-GIS/" class="post-title-link" itemprop="url">开源 GIS</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-26 11:13:03" itemprop="dateCreated datePublished" datetime="2021-04-26T11:13:03+08:00">2021-04-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 12:37:01" itemprop="dateModified" datetime="2021-06-29T12:37:01+08:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/gis/" itemprop="url" rel="index"><span itemprop="name">gis</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="OpenGIS"><a href="#OpenGIS" class="headerlink" title="OpenGIS"></a>OpenGIS</h1><h2 id="开源-GIS-简介"><a href="#开源-GIS-简介" class="headerlink" title="开源 GIS 简介"></a>开源 GIS 简介</h2><p>开源 GIS 软件允许我们查看源码，自由使用，对学习 GIS 底层逻辑、编程技术大有裨益。  </p>
+<h3 id="为什么选择开源-GIS"><a href="#为什么选择开源-GIS" class="headerlink" title="为什么选择开源 GIS"></a>为什么选择开源 GIS</h3><p>专用的 GIS 软件（ ArcGIS ），可以让我们轻松完成所有 GIS 工作。但是，该软件通常非常昂贵，并不能查看源码，不能从中学到编码技能。  </p>
+<p>GIS 供应商有时会为教育活动提供例外，他们提供了更便宜或免费或容易破解的软件。他们这样做的目的是，如果老师和学习者了解他们的软件，他们将不愿意学习其他软件包。当学习者离开学校时，他们将进入工作场所并购买商业软件，而永远不会知道他们可以使用免费的替代品。  </p>
+<p>如果以后想进入互联网企业，掌握开源 GIS 开发技术比掌握 ArcGIS 竞争力大多了。</p>
+<h3 id="GIS-教育现状"><a href="#GIS-教育现状" class="headerlink" title="GIS 教育现状"></a>GIS 教育现状</h3><p><strong>ArcGIS 几乎等于 GIS</strong></p>
+<ul>
+<li>大二有一门课是地理信息系统导论，课程所用软件就是 ArcGIS</li>
+<li>大三的空间分析也是用的 ArcGIS</li>
+<li>大三下的地理信息系统实践还是用的 ArcGIS</li>
+</ul>
+<h3 id="关于-ArcGIS"><a href="#关于-ArcGIS" class="headerlink" title="关于 ArcGIS"></a>关于 ArcGIS</h3><p>合理怀疑 ArcGIS 破解这么容易就是 ESRI 公司故意的。目的就是让大家熟悉 ArcGIS 产品，然后卖 ArcGIS Pro 。无论百度、谷歌还是淘宝，几乎没有可用的 Pro 的破解版。  </p>
+<h2 id="主流开源-GIS-软件"><a href="#主流开源-GIS-软件" class="headerlink" title="主流开源 GIS 软件"></a>主流开源 GIS 软件</h2><h3 id="桌面-GIS"><a href="#桌面-GIS" class="headerlink" title="桌面 GIS"></a>桌面 GIS</h3><ul>
+<li>QGIS: 桌面 GIS 软件大哥，能实现可视化地理数据、空间分析等功能，界面美观易用，支持插件扩展，提供 python api 以供开发。</li>
+<li>GRASS: 拥有众多空间分析功能，在 OSGEO 组织推动下绝大部分功能集成进 QGIS 了。</li>
+<li>SAGA: 空间分析软件，也被集成到 QGIS 了。</li>
+</ul>
+<h3 id="GIS-库（C-）"><a href="#GIS-库（C-）" class="headerlink" title="GIS 库（C++）"></a>GIS 库（C++）</h3><ul>
+<li>GDAL: 抽象地理数据库，GIS 的底层核心，影响巨大。</li>
+<li>PROJ: 投影库，被 GDAL 使用。</li>
+<li>GEOS: 二维矢量库，被 PostGIS 使用，提供有许多算法。</li>
+</ul>
+<h3 id="GIS-服务器"><a href="#GIS-服务器" class="headerlink" title="GIS 服务器"></a>GIS 服务器</h3><ul>
+<li>GeoServer: 主流 GIS 服务器，支持 WMS WFS WCS WTMS 等。</li>
+</ul>
+<h3 id="WebGIS-客户端"><a href="#WebGIS-客户端" class="headerlink" title="WebGIS 客户端"></a>WebGIS 客户端</h3><ul>
+<li>OpenLaysers: 功能全面的 JavaScript 库，支持多种投影，支持多种 OGC 服务。</li>
+<li>Leaflet: 轻量级 JS 库，可以使用插件扩展。</li>
+<li>Cesium: 三维 JS 库，确立了三维规范。</li>
+</ul>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p>更多 GIS 相关开源项目可以关注如下资源:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.osgeo.org/">OSGEO</a>: 开源 GIS 组织。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sshuair/awesome-gis">awesome-gis</a>: 有趣的 GIS 项目集。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ogc.org/">OGC</a>: 制定了众多 GIS 规范。</li>
+</ul>
+<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="GIS-基础概念"><a href="#GIS-基础概念" class="headerlink" title="GIS 基础概念"></a>GIS 基础概念</h3><h4 id="传统"><a href="#传统" class="headerlink" title="传统"></a>传统</h4><ul>
+<li>几何: 点、线、面、集合</li>
+<li>数据: 矢量、栅格、Tin</li>
+<li>格式: Shp、GeoJSON、GeoPackage、GeoTIFF</li>
+<li>地理: 经纬度、坐标系、投影</li>
+<li>样式: sld、kml</li>
+</ul>
+<h4 id="三维"><a href="#三维" class="headerlink" title="三维"></a>三维</h4><ul>
+<li>数据: 点云、glTF</li>
+<li>图形: OpenGL、WebGL、DirectX</li>
+</ul>
+<h4 id="WebGIS"><a href="#WebGIS" class="headerlink" title="WebGIS"></a>WebGIS</h4><ul>
+<li>协议: WMS、WTMS、WFS、WCS、WPS、XYZ</li>
+</ul>
+<h4 id="数据科学"><a href="#数据科学" class="headerlink" title="数据科学"></a>数据科学</h4><ul>
+<li>空间分析: 数据格式、算法</li>
+<li>大数据: Hadoop、Kafka</li>
+</ul>
+<h4 id="图形"><a href="#图形" class="headerlink" title="图形"></a>图形</h4><ul>
+<li>图形学: 物理渲染、Shader、图形硬件</li>
+<li>渲染引擎: Unity、UE4</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">knowmore</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/next-boot.js"></script><script src="/blog/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
